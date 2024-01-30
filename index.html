@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3414ee2275.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>D</span>ULARI</h1>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i  class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+
+            </nav>
+            <div class="header-text">
+                <p>Fronted Web Developer</p>
+                <h1>Hi,I'm <span>Dulari</span> <br>From Sri Lanka</h1>
+            </div>
+
+        </div>
+        
+    </div>
+    <!----------------about----------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/first2.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="title">About Me</h1>
+                    <p>Passionate software engineering student with a keen interest
+                         in designing efficient and innovative solutions. Proficient 
+                         in various programming languages and committed to continuous learning.
+                          Excited about tackling real-world problems through technology and contributing 
+                          to the ever-evolving field of software engineering.
+                       </p>
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Developmet</span><br>Building Android/iOS apps</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Undergraduate Bachelor of Software Engineering Honors</span><br>The Open University of Sri Lanka</li>
+                            <li><span>Diploma in English</span><br>The Sabaragamuwa University of Sri Lanka</li>
+                            <li><span>Computer Application Assistance Course</span><br>Nenasala Computer Training Institute,Ratnapura</li>
+                        </ul>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Embark on a visual journey with my web design creations.
+                         I specialize in transforming ideas into immersive online experiences. 
+                         From elegant aesthetics to seamless functionality, each project is a testament to my commitment to innovative and user-centric design.
+                         Let's collaborate to bring your digital vision to life, enhancing your online presence and captivating your audience.</p>
+                        
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX</h2>
+                    <p>Dive into the world of seamless user experiences and captivating interfaces crafted by me. 
+                        As a UI/UX designer, I blend creativity with functionality to deliver designs that not only look stunning but also enhance user engagement.
+                         From intuitive navigation to visually appealing layouts, my work is a testament to the art of creating digital experiences that leave a lasting impression. 
+                         Join me in the pursuit of user-centric design, where aesthetics and usability converge to elevate your digital interactions.</p>
+                       
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Step into a realm of innovation and user-centric design, where every tap and swipe tells a story.
+                         As an app designer, I specialize in creating visually striking and intuitively functional mobile experiences.
+                         From concept to interface, I bring ideas to life, ensuring your app not only looks stunning but delivers a seamless and delightful journey for users. 
+                         Let's collaborate to craft an app that stands out in the digital landscape, marrying aesthetics with usability for an unparalleled mobile experience.</p>
+                        
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!------------------portfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="title">My Work</h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img id="img1" src="images/image4.webp" alt="">
+                    <div class="layer">
+                        <h3>Flower Shop Website</h3>
+                        <p>Step into our virtual floral paradise, where passion blossoms into every petal. </p>
+                        <a href="https://github.com/hwdsJayathissa/Fragrance-Flower-Web"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img  id="img2" src="images/image2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Todo App</h3>
+                        <p>Within the realm of productivity and organization, my portfolio showcases expertise in crafting intuitive and efficient to-do applications</p>
+                        <a href="https://github.com/hwdsJayathissa/Todo-App"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img  id="img3" src="images/image 3.jpg" alt="">
+                    <div class="layer">
+                        <h3> Porfolio Website</h3>
+                        <p>Welcome to my digital canvas, a reflection of my creative journey and a showcase of projects brought to life.</p>
+                        <a href="https://github.com/hwdsJayathissa/portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img  id="img3" src="images/figma.png" alt="">
+                    <div class="layer">
+                        <h3>Figma Design</h3>
+                        <p>Explore the meticulous craftsmanship behind every pixel in this Figma design, where ideas are meticulously shaped into a seamless visual narrative.</p>
+                        <a href="https://github.com/hwdsJayathissa/Figma-Web-Design"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+
+            </div>
+           
+
+            
+        </div>
+    </div>
+    <!----------------Contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>dularisandeepani25@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>0740738230</p>
+                    <div class="socail-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100082431472237&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/du.laa_00?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/dulari-sandeepani-045768211/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/hwdsJayathissa"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                    <a href="images/Dulari Sandeepani.pdf" download  class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" id="" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" cols="30" rows="10"placeholder="Message"></textarea>
+                        <button  class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Dulari.<i class="fa-solid fa-heart"></i> Made By Self Coding</p>
+        </div>
+    </div>
+    
+     
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+            var sidemenu =document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzMbe64KJ-mo22u1PfZ5mAch7ti38sHcuVUlxI0PhcCpx5GUPQmwfZqAjSN6a33eI9W/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
